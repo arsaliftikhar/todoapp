@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TODO App</title>
+</head>
+<style>
+    body
+    {
+        margin: 0;
+        padding: 0;
+        background: radial-gradient(#747474, #2a2a2a);
+        background-size: cover ;
+        height: 100vh;
+    }
+    .details
+    {
+        text-align: center;
+        color: white;
+        font-family: Montserrat;
+    }
+    .main
+    {
+        padding: 20px;
+        margin: 0 auto;
+        background-color: #f7e546;
+        box-shadow: #191919 2px 2px 15px 2px;
+        max-width: 450px;
+        min-height: 100px;
+        border-radius: 10px;
+        font-family: Montserrat;
+    }
+    .main input
+    {
+        padding: 10px;
+        width: 250px;
+        background: none;
+        border-bottom: 2px solid black;
+        border-top: none;
+        border-right: none;
+        border-left: none;
+        outline: none;
+        text-transform: capitalize;
+        font-size: 20px;
+    }
+    .main .topBtn
+    {
+        padding: 8px;
+        font-size: 16px;
+        outline: none;
+        cursor: pointer;
+    }
+    .main ul li
+    {
+        font-size: 18px;
+
+        list-style: none;
+        margin-left: -40px;
+        padding: 10px;
+        text-transform: capitalize;
+    }
+    .listBtn
+    {
+        float: right;
+        padding: 5px;
+        margin: 2px;
+        line-height: 10px;
+        cursor: pointer;
+    }
+</style>
+<body>
+<br>
+<br>
+<br>
+<div class="details">
+    <h3>Press Enter button To Enter Value</h3>
+</div>
+<div class="main">
+    <input id="todoValue" autofocus placeholder="Enter Todo Value" type="text">
+    <button class="topBtn" onclick="addList()">ADD</button>
+    <button class="topBtn" onclick="deleteAll()">DELETE ALL</button>
+    <br>
+    <ul id="list">
+
+    </ul>
+<button class="topBtn" onclick="window.print()">Print</button>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
